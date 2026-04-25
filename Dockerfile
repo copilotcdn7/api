@@ -9,7 +9,7 @@ RUN rm /etc/nginx/conf.d/default.conf || true # Add || true to prevent error if 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose the port your NGINX server listens on (Cloud Run expects 8080 by default)
-EXPOSE 8083
+EXPOSE 8080
 
 # Command to run NGINX in the foreground
 CMD ["nginx", "-g", "daemon off;"]
